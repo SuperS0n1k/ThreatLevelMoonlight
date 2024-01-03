@@ -36,16 +36,13 @@
             /*
                 DEAREST READER: 
                 Wilt thou be so pleased to be informed, that the contents contained hereafter are not final, but are nontheless
-                made for the enjoyment of the creators and the members of this esteemed Midnight Council.
+                made for the enjoyment of the creators and the members of this esteemed Moonlit Council.
 
-                A THREAT LEVEL MIDNIGHT should not be of concern to any person under the whole canopy of heaven.
+                A THREAT LEVEL MOONLIGHT should not be of concern to any person under the whole canopy of heaven.
 
                 "And this, our life, exempt from public haunt, finds tongues in trees, books in the running brooks, sermons in stones, and good in everything."
             */
 
-            timerContainer.innerHTML = `
-                <iframe style="position: fixed; top: 0; left: 0; z-index: 10000; width: 100vw; height: 100vh;" src="https://www.youtube.com/embed/QwATaVrZhpI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            `
 
             clearInterval(x);
           }
