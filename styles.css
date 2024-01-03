@@ -1,0 +1,166 @@
+@font-face {
+    font-family: kooka;
+    src: url('kooka.ttf');
+  }  
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #271f1f;
+    color: #ffedd1;
+    font-family: kooka;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+@keyframes hoot {
+    from {
+        transform: translateY(50px) skewX(6deg);
+    }
+
+    50% {
+        transform: translateY(50px) skewX(-6deg);
+    }
+
+    to {
+        transform: translateY(50px) skewX(6deg);
+    }
+}
+
+.logo {
+    margin-top: 40px;
+    height: 500px;
+    width: 500px;
+    transform: translateY(50px);
+    animation-name: hoot;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.timer-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.timer-col {
+    text-align: center;
+}
+
+.timer-cat {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 30px;
+    animation: glitch 2s steps(100) infinite;
+
+}
+
+.timer-content {
+    font-size: 40px;
+    animation: glitch 2s steps(100) infinite;
+}
+
+@keyframes glitch {
+    0% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    4% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    5% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    10% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    11% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    15% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    16% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    20% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    21% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    30% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    31% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    40% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    41% {text-shadow: 50px 0 0 blue, -50px 0 0 lime;}
+    42% {text-shadow: 0 0 0 blue, 0 0 0 lime;}
+    43% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    46% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    47% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    50% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    51% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    55% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    56% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    60% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    61% {text-shadow: 30px 0 0 red, -30px 0 0 lime;}
+    62% {text-shadow: 0 0 0 red, 0 0 0 lime;}
+    63% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+    66% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+    67% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    70% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    71% {text-shadow: 70px 0 0 red, -70px 0 0 blue;}
+    72% {text-shadow: 0 0 0 red, 0 0 0 blue;}
+    73% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    76% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    77% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    80% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    81% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    85% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    86% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    90% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    91% {text-shadow: 60px 0 0 lime, -60px 0 0 blue;}
+    92% {text-shadow: 0 0 0 lime, 0 0 0 blue;}
+    92% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    95% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    96% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    99% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    100% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  }
+
+  canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #271f1f;
+  }
+
+  @keyframes threatLevelWhat {
+    from {
+        opacity: 0;
+        transform:  scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform:  scale(1.1);
+    }
+
+    to {
+        opacity: 0;
+        transform:  scale(1);
+    }
+}
+
+  .threat-level-what {
+      height: 100vh;
+      width: 100vw;
+      background: url('img/midnight.png');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      animation-name: threatLevelWhat;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-duration: 8s;  
+  }
